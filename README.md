@@ -2,11 +2,11 @@
 
 ![Home Page](/Images/Our%20Superstore.jpg)
 
-## Introduction ##
+## Introduction & Project Overview ##
 
-This dashboard was created for a **sales / Business development manager of a fictional superstore**. It focuses on analyzing sales data from a fictional superstore to **uncover actionable insights about sales performance, product categories, and consumer behavior**. The goal is to demonstrate how raw sales data can be transformed into meaningful information to support data-driven strategic decisions in sales and business development.
+This dashboard was created for a **Sales / Business Development Manager of a global SuperStore**. It focuses on analyzing sales data from the superstore to **uncover actionable insights about sales performance, product categories, and consumer behavior**. The goal is to demonstrate how raw sales data can be transformed into meaningful information to support data-driven strategic decisions in sales and business development.
 
-By using Power BI, I designed an interactive dashboard that provides:
+By using Power BI, I designed several interactive dashboards that provide:
 
 1. 📈 Sales Insights – overall Sales growth and seasonal patterns
 2. 🛍️ Product Insights – best and worst-performing categories , sub-categories, and products
@@ -59,26 +59,27 @@ This project demonstrates the end-to-end Power BI workflow, covering data prepar
 - 🎨 Delivered a business-friendly, interactive dashboard that supports strategic decision-making.
 
 
-## Dashboard Overview ##
-
-![Home Page](/Images/Home%20Page.jpg)
-
-This is a Home Page of our dashboard. It contains a project name, project objective with a short project description. It also includes a dashboard page navigator and a help buttion to guide users on how to interact with the dashboard.
-
+## Data Structure / Model Overview ##
 
 ![Data Model](/Images/Data%20Model.jpg)
-This is the model view of our dashboard. It shows which tables are exist in our data model and how they are relate to each other. This helps any reviewer or third party understand how the data model was designed.
+This is the model view of our dashboard. As you can see in the model, we have total 6 tables in the model: Customer table, Product table, Sales table, Order date table, Ship date table, and All Measure Table. However, In the original dataset, we had just one flat "Superstore sales Table". We have created separate "Customer Table" and "Product Table" to normalize the data. In addition, we have also created separate "Ship Date" and "Order Date" Table to avoid confusion or mismatch during Time Series Analysis. Then, we have built a Star Schema where all dimension tables relate to Fact Table (Sales Table) via 1-to-Many relationship, filter directing from dimension to fact table. "_All Measure" is a separate table which we have created to store our all measures in one place.   
 
+
+## Dashboard Overview: Executive Summary / Key Insights ##
+
+### Sales Insights ###
 
 ![Overall Sales Insights](/Images/Sales%20Insights_Overall.jpg)
 
-This is the overall sales insights dashboard. It highlights key KPIs like Total orders, Total Sales, Total Profit, and Profit Margin for complete dataset (meaning that it includes all years available in our data from 2014-2017 without applying any filter). This also shows year-over-year Total Sales or Revenue Growth as well as compare year-over-year profit growth. Users can drill down by year or region for more specific insights. 
+This is the overall sales insights dashboard. It highlights key KPIs like Total orders, Total Sales, Total Profit, and Profit Margin. This also compares year-over-year Total Sales and Profit Growth. The Dashboard shows following insights: 
 
+1. The Revenue has increased over the years. After slightly decreasing between 2014 and 2015, the revenue has significantly improved between 2015 and 2017, with highest jump between 2015 and 2016.
 
-![Sales Insights Drill-down for a specific year 2017](/Images/Sales%20Insights%20Drill-Down%20for%20a%20specific%20Year%20(2017).jpg)
+2. The Profit has consistently increased over the years. Between 2014 & 2015, the profit has increased by 24%, followed by 33% and 14% respectively in the following years. Even though Profit has consistently increased over the years, overall Profit Margin has been quite low over the years, stand at 2.89%.
 
-This is the sales insights drill-down for the year 2017. It shows key KPIs like Total orders, Total Sales, Total Profit, and Profit Margin for the year 2017 (as you can see left top corner, filter has been applied for year slicer). This also shows Month-over-Month Total Sales or Revenue Growth / Decline as well as compare Month-over-Month Profit Growth / Decline for the year 2017.
+3. Across all years, it has been shown that Qtr-4 is the highest selling period, followed by Qtr-3, Qtr-2, and Qtr-1. 
 
+### Product Insights ###
 
 ![Overall Product Insights](/Images/Product%20Insights_Overall.jpg)
 
@@ -89,6 +90,7 @@ This is the overall product insights dashboard. It compares product categories a
 
 This is the product insights drill-down for the year 2014 and for the region south. Best- and worst-performing products differ significantly compared to the overall dataset, highlighting the importance of regional analysis.
 
+### Consumer Insights ###
 
 ![Overall Consumer Insights](/Images/Consumer%20Insights_Overall.jpg)
 
