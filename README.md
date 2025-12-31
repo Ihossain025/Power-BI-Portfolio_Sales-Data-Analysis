@@ -115,19 +115,19 @@ In contrast, "PNY Rapid USB Car Charger – Black", "Grip Seal Envelopes", and "
 
 This is the overall consumer insights dashboard. It demonstrates which consumer segment, region, and states contributing most to our revenue. It also reveals product preferences by segment and geography. Key Insights are described below: 
 
-1. The dataset consists of three customer segments: Consumer, Corporate, and Home Office. Among them, the Consumer segment contributes the highest share of total revenue, followed by Corporate and Home Office.
+1. The dataset consists of three customer segments: Consumer, Corporate, and Home Office. Among them, the Consumer segment contributes the highest share of total revenue, followed by Corporate     and Home Office.
 
-In terms of product preferences, the Consumer segment primarily purchases Furniture, followed by Technology and Office Supplies. In contrast, both Corporate and Home Office customers show a stronger preference for Technology products, with Office Supplies and Furniture ranking second and third, respectively. This indicates distinct purchasing behaviors across customer segments, emphasizing the importance of segment-specific product strategies.
+   In terms of product preferences, the Consumer segment primarily purchases Furniture, followed by Technology and Office Supplies. In contrast, both Corporate and Home Office customers show a     stronger preference for Technology products, with Office Supplies and Furniture ranking second and third, respectively. This indicates distinct purchasing behaviors across customer segments,    emphasizing the importance of segment-specific product strategies.
 
 2. From a geographic perspective, the West region is the highest revenue-contributing region, followed by East, Central, and South.
 
-At the state level, California leads sales in the West, followed by Washington and Arizona. In the East, New York is the top-performing state, followed by Pennsylvania and Ohio. Texas dominates the Central region, with Illinois and Michigan as the next highest contributors, while North Carolina leads in the South, followed by Georgia and Virginia.
+   At the state level, California leads sales in the West, followed by Washington and Arizona. In the East, New York is the top-performing state, followed by Pennsylvania and Ohio. Texas           dominates the Central region, with Illinois and Michigan as the next highest contributors, while North Carolina leads in the South, followed by Georgia and Virginia.
 
-Across all regions, each product category generates a reasonable share of revenue, although their relative performance varies slightly by region. This highlights the importance of regional-level analysis rather than relying solely on global performance trends.
+   Across all regions, each product category generates a reasonable share of revenue, although their relative performance varies slightly by region. This highlights the importance of regional-     level analysis rather than relying solely on global performance trends.
 
 3. Analysis of shipping preferences shows that Standard Class is the most commonly used shipping mode, accounting for approximately 60% of all shipments. This is followed by Second Class (around 20%), First Class (around 15%), and Same Day Delivery (approximately 5%).
 
-The dominance of Standard Class suggests that most customers prioritize cost efficiency over delivery speed, while faster shipping options are used selectively for time-sensitive orders. 
+   The dominance of Standard Class suggests that most customers prioritize cost efficiency over delivery speed, while faster shipping options are used selectively for time-sensitive orders. 
 
 
 ## Dashboard Overview: One Level Details / Deeper Insights ##
