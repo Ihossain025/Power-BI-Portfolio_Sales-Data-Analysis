@@ -80,7 +80,7 @@ This is the model view of our dashboard. As you can see in the model, we have to
 
 ## Dashboard Overview: Executive Summary / Key Insights ##
 
-### Sales Insights ###
+### Sales Insights: ###
 
 ![Overall Sales Insights](/Images/Sales%20Insights_Overall.jpg)
 
@@ -92,7 +92,7 @@ This is the overall sales insights dashboard. It highlights key KPIs like Total 
 
 3. A clear seasonal sales pattern is observed across all years, with Q4 consistently generating the highest revenue, followed by Q3, Q2, and Q1. This suggests strong year-end demand, likely driven by holiday seasons and promotional campaigns, and highlights the importance of inventory and marketing planning ahead of Q4.
 
-### Product Insights ###
+### Product Insights: ###
 
 ![Overall Product Insights](/Images/Product%20Insights_Overall.jpg)
 
@@ -109,7 +109,7 @@ In contrast, "PNY Rapid USB Car Charger – Black", "Grip Seal Envelopes", and "
 4. A regional and year-specific analysis reveals significant variation in best- and worst-performing categories, sub-categories, and products compared to the overall dataset. This highlights the importance of localized and time-based analysis, as global averages can mask regional demand patterns and lead to sub-optimal business decisions.
 
    
-### Consumer Insights ###
+### Consumer Insights: ###
 
 ![Overall Consumer Insights](/Images/Consumer%20Insights_Overall.jpg)
 
