@@ -61,7 +61,9 @@ This project demonstrates the end-to-end Power BI workflow, covering data prepar
 
 ## Data Structure / Model Overview ##
 
+
 ![Data Model](/Images/Data%20Model.jpg)
+
 This is the model view of our dashboard. As you can see in the model, we have total 6 tables in the model: Customer table, Product table, Sales table, Order date table, Ship date table, and All Measure Table. However, In the original dataset, we had just one flat "Superstore sales Table". We have created separate "Customer Table" and "Product Table" to normalize the data. In addition, we have also created separate "Ship Date" and "Order Date" Table to avoid confusion or mismatch during Time Series Analysis. Then, we have built a Star Schema where all dimension tables relate to Fact Table (Sales Table) via 1-to-Many relationship, filter directing from dimension to fact table. "_All Measure" is a separate table which we have created to store our all measures in one place.   
 
 
@@ -73,9 +75,9 @@ This is the model view of our dashboard. As you can see in the model, we have to
 
 This is the overall sales insights dashboard. It highlights key KPIs like Total orders, Total Sales, Total Profit, and Profit Margin. This also compares year-over-year Total Sales and Profit Growth. The Dashboard shows following insights: 
 
-1. The Revenue has increased over the years. After slightly decreasing between 2014 and 2015, the revenue has significantly improved between 2015 and 2017, with highest jump between 2015 and 2016.
+1. The Revenue has increased over the years. After being quite same between 2014 and 2015, the revenue has significantly improved between 2015 and 2017, with highest jump between 2015 and 2016.
 
-2. The Profit has consistently increased over the years. Between 2014 & 2015, the profit has increased by 24%, followed by 33% and 14% respectively in the following years. Even though Profit has consistently increased over the years, overall Profit Margin has been quite low over the years, stand at 2.89%.
+2. The Profit has consistently increased over the years. Between 2014 & 2015, the profit has increased by 24%, followed by 33% and 14% respectively in the following years. Even though Profit has risen consistently over the years, overall Profit Margin has been quite low over the years, stand at 2.89%.
 
 3. Across all years, it has been shown that Qtr-4 is the highest selling period, followed by Qtr-3, Qtr-2, and Qtr-1. 
 
@@ -83,26 +85,38 @@ This is the overall sales insights dashboard. It highlights key KPIs like Total 
 
 ![Overall Product Insights](/Images/Product%20Insights_Overall.jpg)
 
-This is the overall product insights dashboard. It compares product categories and sub-categories as well as shows best and worst performing products in terms of total sales or revenue for complete data (means without applying any filter). Users can drill down by year or region for more specific insights. For Example, See the next image.
+This is the overall product insights dashboard. It compares product categories and sub-categories as well as shows best and worst performing products in terms of total sales or revenue. The Dashboard shows following Insights: 
 
+1. In terms of Product Category, "Technology" brings most of our revenue, followed by "Furniture" and "Office Supplies".
 
-![Product Insights Drill-down for a specific year (2014) & for a specific region (south)](/Images/Product%20Insights%20Drill-Down%20for%20a%20specific%20year%20(2014)%20with%20a%20specific%20Region%20(South).jpg)
+2. In terms of Product Sub-Category, "Chairs" is the highest revenue generating sub-category, followed by "Phones", "Storage", "Tables", and "Accessories".
 
-This is the product insights drill-down for the year 2014 and for the region south. Best- and worst-performing products differ significantly compared to the overall dataset, highlighting the importance of regional analysis.
+3. In terms of Product, "Cannon ImageClass 2200 Advanced Copier" is our best selling product, followed by "GBC Ibimaster 500 manual pro click binding system", and "HON 5400 series task chair for Big and Tall", While, On the other hand, "PNY Rapid USB Car Charger - Black" is our least selling product, followed by "Grip Seal Envelopes" and "Acco Economy Flexible Poly Round Ring Binder".
+  
+4. While doing regional and year specific analysis, it has been noticed that Best- and worst-performing Category, Sub-Category, and Products differ significantly compared to the overall dataset, highlighting the importance of regional analysis.
 
 ### Consumer Insights ###
 
 ![Overall Consumer Insights](/Images/Consumer%20Insights_Overall.jpg)
 
-This is the overall consumer insights dashboard. It demonstrates which consumer segment, region, and states contributing most to our revenue (cover complete data, means without applying any filter). It also reveals product preferences by segment and geography. This page can also be drill-down by a specific year to see year specific details. For instance, see the next image.
+This is the overall consumer insights dashboard. It demonstrates which consumer segment, region, and states contributing most to our revenue. It also reveals product preferences by segment and geography. Key Insights are described below: 
 
+1. We have 3 types of customer segments: Consumer, Corporate, and HomeOffice. Among them "Consumer" segement contributing most to our revenue, followed by "Corporate" and "Homeoffice". In terms of their product preferences, our analysis reveals that "Consumer" segment buys "Furniture" category most followed by "Technology" and "Office Supploies", while "Corporate" and "HomeOffice"segment buys "Technology" category most followed by "Offiec Supplies" and "Furnitire" and vice versa.
+
+2. In terms of geographic sales, our analysis demonstrate that "West" region contributing most to our revenue, followed by East, Central, and South. In West, California is our highest selling states followed by Washington and Arizona. In East, New York is our most revenue generating states followed by Pennsylvania and Ohio. In Central, Texas is our highest revenue generating states followed by Illionois, and Michigan, and In south, North Carolina is our highest most revenue generating states followed by Georgia and Virginia. Across all regions, every product category is quite popular and generating a reasonable amount of revenue, even though there has been a slight difference among them.
+
+3. In terms of customer shipping mode preferences, our analysis depicts that "Standard Class" is the most preferred shipping mode by customers, contributing around 60% of all of shipment. The next preferred shipping mode is "Second Class" (around 20%), followed by "First Class" (around 15%), and "Same Day Delivery" (around 5%). 
+
+
+## Dashboard Overview: One Level Details / Deeper Insights ##
+
+Each Dashboard can also be drill-down by a specific year or region to see a particular year or geographic details. For instance, see the next image. This is the consumer insights drill-down for the year 2014.
 
 ![Consumer Insights Drill-down for a specific year 2014](/Images/Consumer%20Insights%20Drill-Down%20for%20a%20specific%20year%20(2014).jpg)
 
-This is the consumer insights drill-down for the year 2014. Results vary significantly compared to the overall dataset, allowing deeper exploration of consumer behavior.
+Results vary significantly compared to the overall dataset, allowing deeper exploration of temporal and regional analysis. To see the full details, we recommend to download the complete Dashboard (Power BI file). 
 
-
-## Conclusion
+## Conclusion ##
 
 The Superstore Sales Data Analytics project demonstrates how raw sales data can be transformed into actionable business insights using Power BI. Through structured data preparation, modeling, DAX calculations, and interactive visualization, the dashboard provides a 360° view of sales, products, and consumer behavior.
 
