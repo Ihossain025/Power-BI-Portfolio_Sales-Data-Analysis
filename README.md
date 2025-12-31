@@ -98,13 +98,13 @@ This is the overall sales insights dashboard. It highlights key KPIs like Total 
 
 This is the overall product insights dashboard. It compares product categories and sub-categories as well as shows best and worst performing products in terms of total sales or revenue. The Dashboard shows following Insights: 
 
-1. "Technology" is the highest revenue-generating product category, significantly outperforming "Furniture" and "Office Supplies". This indicates a strong customer demand for technology products and suggests that this category is a key driver of overall sales performance.
+1. "Technology" is the highest revenue-generating product category, significantly outperforming "Furniture" and "Office Supplies". This indicates a strong customer demand for technology             products and suggests that this category is a key driver of overall sales performance.
 
-2. At the sub-category level, Chairs generate the highest revenue, followed by Phones, Storage, Tables, and Accessories. This highlights that high-value, durable goods contribute more to revenue than low-cost consumables, even if their sales volumes may be lower.
+2. At the sub-category level, Chairs generate the highest revenue, followed by Phones, Storage, Tables, and Accessories. This highlights that high-value, durable goods contribute more to           revenue than low-cost consumables, even if their sales volumes may be lower.
    
-3. The "Cannon imageCLASS 2200 Advanced Copier" is the top-performing product, followed by the "GBC Ibimaster 500 Manual ProClick Binding System" and the "HON 5400 Series Task Chair for Big and Tall". These products contribute disproportionately to revenue, indicating a reliance on high-ticket items.
+3. The "Cannon imageCLASS 2200 Advanced Copier" is the top-performing product, followed by the "GBC Ibimaster 500 Manual ProClick Binding System" and the "HON 5400 Series Task Chair for Big and    Tall". These products contribute disproportionately to revenue, indicating a reliance on high-ticket items.
 
-In contrast, "PNY Rapid USB Car Charger – Black", "Grip Seal Envelopes", and "Acco Economy Flexible Poly Round Ring Binder" are among the lowest-performing products, likely due to lower price points, high competition, or limited differentiation.
+   In contrast, "PNY Rapid USB Car Charger – Black", "Grip Seal Envelopes", and "Acco Economy Flexible Poly Round Ring Binder" are among the lowest-performing products, likely due to lower         price points, high competition, or limited differentiation.
   
 4. A regional and year-specific analysis reveals significant variation in best- and worst-performing categories, sub-categories, and products compared to the overall dataset. This highlights the importance of localized and time-based analysis, as global averages can mask regional demand patterns and lead to sub-optimal business decisions.
 
