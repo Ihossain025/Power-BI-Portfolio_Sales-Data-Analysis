@@ -1,163 +1,319 @@
-# Power BI Dashboard / Project: Superstore Sales Data Analytics #
+# 📊 Superstore Sales Performance Dashboard | Power BI
 
-![Home Page](/Images/Our%20Superstore.jpg)
+Business Intelligence • Data Analytics • Power BI • DAX • Data Modeling
 
-## Introduction & Project Overview ##
+English | Deutsch
 
-This Power BI dashboard was developed for a Sales Manager / Sales Department Head of a global retail Superstore to support data-driven decision-making across sales, product strategy, and customer management.
+An interactive Power BI dashboard for analyzing sales performance, profitability, product categories, customer segments, and regional performance using the Superstore dataset.
 
-The project analyzes historical sales data to identify revenue trends, product performance, customer purchasing behavior, and regional sales patterns. The objective was to transform raw transactional data into clear, actionable insights that enable management to evaluate performance, identify growth opportunities, and optimize sales strategies at both a global and regional level.
+---
 
-Using Power BI, multiple interactive dashboards were designed to allow stakeholders to monitor key performance indicators (KPIs), perform drill-down analysis, and compare performance across time periods, product hierarchies, customer segments, and geographic regions.
+## 🇬🇧 Introduction & Project Overview
 
-The solution provides insights across the following key business areas:
+This Power BI project was developed from the perspective of a **Sales Manager / Sales Department Head** who needs a clear overview of business performance and the ability to investigate specific areas when required.
 
-📈 Sales Performance Analysis
-Evaluation of overall sales growth, profitability trends, and seasonal patterns over multiple years.
+The project transforms raw transactional sales data into an interactive dashboard that combines **sales, profitability, product, customer segment, and geographic analysis** in one centralized view.
 
-🛍️ Product Performance Analysis
-Identification of best- and worst-performing product categories, sub-categories, and individual products to support portfolio and pricing decisions.
+The dashboard helps management to:
 
-👥 Customer & Segment Analysis
-Analysis of customer segments (Consumer, Corporate, Home Office) to understand their contribution to revenue and purchasing preferences.
+* 📈 Monitor sales and profit development over time
+* 🛍️ Compare product categories and sub-categories
+* 👥 Understand customer segment performance
+* 🌍 Evaluate regional and state-level performance
+* 📊 Compare current performance with previous years
+* 🔎 Drill into regional details when deeper analysis is required
 
-🌍 Regional & Geographic Performance
-Assessment of sales distribution across regions and states to highlight high-performing markets and regional demand variations.
+The goal is not only to visualize data, but to provide a practical BI solution that supports **data-driven sales and business decisions**.
 
+### 🇩🇪 Einführung & Projektüberblick
 
-## 🛠️ Skills Demonstrated ##
+Dieses Power-BI-Projekt wurde aus der Perspektive eines **Sales Managers / Vertriebsleiters** entwickelt, der einen klaren Überblick über die Geschäftsentwicklung benötigt und bei Bedarf einzelne Bereiche detaillierter analysieren möchte.
 
-This project demonstrates the end-to-end Power BI workflow, covering data preparation, modeling, analysis, and dashboarding.
+Das Projekt transformiert rohe Transaktionsdaten in ein interaktives Dashboard, das **Umsatz, Profitabilität, Produkte, Kundensegmente und regionale Performance** in einer zentralen Übersicht kombiniert.
 
-🔄 Data Preparation / ETL Process (Power Query)
+Das Dashboard unterstützt das Management dabei:
 
-- 📥 Extracted raw sales data from the web and created Fact (Sales) and Dimension (Customer, Product) tables.
+* 📈 Umsatz- und Gewinnentwicklung über die Zeit zu überwachen
+* 🛍️ Produktkategorien und Sub-Kategorien zu vergleichen
+* 👥 die Performance verschiedener Kundensegmente zu verstehen
+* 🌍 Regionen und Bundesstaaten zu analysieren
+* 📊 die aktuelle Performance mit Vorjahren zu vergleichen
+* 🔎 bei Bedarf regionale Details per Drill-through zu untersuchen
 
-- 🧹 Cleaned and transformed data: removed unnecessary columns, handled blanks/errors, ensured correct data types.
+Das Ziel ist nicht nur die Visualisierung von Daten, sondern die Entwicklung einer praxisnahen BI-Lösung zur **datenbasierten Unterstützung von Vertriebs- und Geschäftsentscheidungen**.
 
-- 🔑 Removed duplicates from dimension tables to maintain integrity.
+---
 
-🗂️ Data Modeling
+## 🛠️ Skills Demonstrated
 
-- 📅 Built separate Date Tables (Order & Shipping) for accurate time-series analysis (Year-over-Year, Month-over-Month).
+### 🇬🇧
 
-- ⭐ Designed a Star Schema with fact (Sales Table) and dimension tables (Customer Table, Product Table, Order Date Table, Shipping Date Table).
+This project demonstrates an end-to-end Power BI workflow covering **data preparation, data modeling, DAX analysis, visualization, and dashboard design**.
 
-- 🔗 Established 1-to-many relationships for consistent insights.
+**🔄 Data Preparation / ETL – Power Query**
 
-📊 Data Analysis (DAX)
+* Extracted and transformed the raw Superstore sales data
+* Removed unnecessary columns and handled data quality issues
+* Corrected data types and cleaned the dataset
+* Created separate dimension tables for customers and products
+* Removed duplicates where required to maintain data integrity
 
-- ➕ Created calculated columns and measures: Total Sales / Revenue, Total sales for a specific year / Region / category, Total Profit, Profit Margin, Total Orders, Distinct Categories.
+**🗂️ Data Modeling**
 
-- 🧮 Applied functions like CALCULATE, SUMX, DIVIDE, DISTINCTCOUNT, COUNTA.
+* Designed a **Star Schema** with a central Sales fact table
+* Created separate Order Date and Ship Date tables for time-based analysis
+* Established 1-to-many relationships between dimensions and the fact table
+* Created a dedicated measure table to organize DAX calculations
 
-- ⏳ Enabled time intelligence with CALENDAR, YEAR, MONTH, DAY.
+**📐 Data Analysis – DAX**
 
-📈 Data Visualization
+* Created measures for Sales, Profit, Profit Margin, Orders, and growth analysis
+* Implemented Year-over-Year calculations and time intelligence
+* Used functions such as `CALCULATE`, `SUMX`, `DIVIDE`, and `DISTINCTCOUNT`
 
-- 📉 Line Charts → To show Sales & Profit trends (Year-over-Year, Month-over-Month, Quater-over-Quater).
+**📊 Data Visualization & UX**
 
-- 🗂️ Cards → To demonstrate Key KPIs (Total No. of Orders, Total Sales, Total Profit, and Profit Margin).
+* Designed KPI cards, trend charts, bar/column charts, and comparison visuals
+* Added slicers for interactive filtering
+* Implemented drill-down and drill-through analysis
+* Added navigation and reset-filter functionality
+* Designed the dashboard with an executive-focused layout
 
-- 📊 Bar/Column/Cluster Column/Stacked Bar Charts → To compare Total Sales / Overall Performance by category, Products, consumer segment, and region.
+### 🇩🇪
 
-- 🥧 Pie Chart → To exhibit Shipping mode distribution.
+Dieses Projekt zeigt einen vollständigen Power-BI-Workflow von der **Datenaufbereitung über Datenmodellierung und DAX bis hin zu Visualisierung und Dashboard-Design**.
 
-🎛️ Interactive Dashboard
+**🔄 Datenaufbereitung / ETL – Power Query**
 
-- 🎛️ Added slicers, drill-downs, tooltips, and navigation buttons for interactivity.
+* Rohdaten des Superstore-Datensatzes extrahiert und transformiert
+* Nicht benötigte Spalten entfernt und Datenqualitätsprobleme bereinigt
+* Datentypen korrigiert und Daten bereinigt
+* Separate Dimensionstabellen für Kunden und Produkte erstellt
+* Duplikate zur Sicherstellung der Datenintegrität entfernt
 
-- 🎨 Delivered a business-friendly, interactive dashboard that supports strategic decision-making.
+**🗂️ Datenmodellierung**
 
+* Ein **Star Schema** mit einer zentralen Sales-Faktentabelle entwickelt
+* Separate Tabellen für Order Date und Ship Date erstellt
+* 1:n-Beziehungen zwischen Dimensionen und Faktentabelle aufgebaut
+* Eine separate Measure-Tabelle zur strukturierten Verwaltung der DAX-Measures erstellt
 
-## Data Structure / Model Overview ##
+**📐 Datenanalyse – DAX**
 
+* Measures für Umsatz, Profit, Profit Margin, Orders und Wachstum entwickelt
+* Year-over-Year-Berechnungen und Time Intelligence umgesetzt
+* Funktionen wie `CALCULATE`, `SUMX`, `DIVIDE` und `DISTINCTCOUNT` verwendet
 
-![Data Model](/Images/Data%20Model.jpg)
+**📊 Visualisierung & UX**
 
-This is the model view of our dashboard. As you can see in the model, we have total 6 tables in the model: Customer table, Product table, Sales table, Order date table, Ship date table, and All Measure Table. However, In the original dataset, we had just one flat "Superstore sales Table". We have created separate "Customer Table" and "Product Table" to normalize the data. In addition, we have also created separate "Ship Date" and "Order Date" Table to avoid confusion or mismatch during Time Series Analysis. Then, we have built a Star Schema where all dimension tables relate to Fact Table (Sales Table) via 1-to-Many relationship, filter directing from dimension to fact table. "_All Measure" is a separate table which we have created to store our all measures in one place.   
+* KPI-Karten, Trenddiagramme, Balken-/Säulendiagramme und Vergleichsvisualisierungen erstellt
+* Interaktive Slicer integriert
+* Drill-down und Drill-through umgesetzt
+* Navigation und Reset-Filter-Funktion integriert
+* Dashboard mit Fokus auf eine übersichtliche Management-Perspektive gestaltet
 
+---
 
-## Dashboard Overview: Executive Summary / Key Insights ##
+## 🧩 Data & Data Model
 
-### Sales Insights: ###
+### 🇬🇧
 
-![Overall Sales Insights](/Images/Sales%20Insights_Overall.jpg)
+The project is based on the **Superstore sales dataset**, originally provided as a flat transactional table.
 
-This is the overall sales insights dashboard. It highlights key KPIs like Total orders, Total Sales, Total Profit, and Profit Margin. This also compares year-over-year Total Sales and Profit Growth. The Dashboard shows following insights: 
+The data was transformed into a structured **Star Schema** consisting of:
 
-1. Revenue shows a strong upward trend from 2015 to 2017, after remaining relatively flat between 2014 and 2015. The largest year-over-year growth occurred between 2015 and 2016, indicating a turning point in sales performance and possible improvements in market demand, pricing, or sales strategy.
+* **Sales Table** – central fact table containing transactional sales data
+* **Customer Table** – customer-related attributes
+* **Product Table** – product and category hierarchy
+* **Order Date Table** – date dimension for order-based time analysis
+* **Ship Date Table** – date dimension for shipping-related analysis
+* **_All Measure Table** – dedicated table for organizing DAX measures
 
-2. Profit increased consistently year over year, with growth rates of 24%, 33%, and 14% respectively. However, despite rising profits, the overall profit margin remains low at 2.89%, suggesting that costs are growing almost proportionally with revenue. This indicates limited pricing power or high operational/discount costs.
+The dimensional model allows consistent filtering and supports reliable time-series and business analysis.
 
-3. A clear seasonal sales pattern is observed across all years, with Q4 consistently generating the highest revenue, followed by Q3, Q2, and Q1. This suggests strong year-end demand, likely driven by holiday seasons and promotional campaigns, and highlights the importance of inventory and marketing planning ahead of Q4.
+![Data Model](Images/Data_Model.jpg)
 
-### Product Insights: ###
+### 🇩🇪
 
-![Overall Product Insights](/Images/Product%20Insights_Overall.jpg)
+Das Projekt basiert auf dem **Superstore Sales Dataset**, das ursprünglich als flache Transaktionstabelle vorlag.
 
-This is the overall product insights dashboard. It compares product categories and sub-categories as well as shows best and worst performing products in terms of total sales or revenue. The Dashboard shows following Insights: 
+Die Daten wurden in ein strukturiertes **Star Schema** überführt:
 
-1. "Technology" is the highest revenue-generating product category, significantly outperforming "Furniture" and "Office Supplies". This indicates a strong customer demand for technology             products and suggests that this category is a key driver of overall sales performance.
+* **Sales Table** – zentrale Faktentabelle mit den Transaktionsdaten
+* **Customer Table** – kundenbezogene Merkmale
+* **Product Table** – Produkt- und Kategoriehierarchie
+* **Order Date Table** – Datumstabelle für zeitbezogene Bestellanalysen
+* **Ship Date Table** – Datumstabelle für Versandanalysen
+* **_All Measure Table** – separate Tabelle zur Organisation der DAX-Measures
 
-2. At the sub-category level, Chairs generate the highest revenue, followed by Phones, Storage, Tables, and Accessories. This highlights that high-value, durable goods contribute more to           revenue than low-cost consumables, even if their sales volumes may be lower.
-   
-3. The "Cannon imageCLASS 2200 Advanced Copier" is the top-performing product, followed by the "GBC Ibimaster 500 Manual ProClick Binding System" and the "HON 5400 Series Task Chair for Big and    Tall". These products contribute disproportionately to revenue, indicating a reliance on high-ticket items.
+Das dimensionale Datenmodell ermöglicht konsistente Filterung und zuverlässige Zeitreihen- und Geschäftsanalyse.
 
-   In contrast, "PNY Rapid USB Car Charger – Black", "Grip Seal Envelopes", and "Acco Economy Flexible Poly Round Ring Binder" are among the lowest-performing products, likely due to lower         price points, high competition, or limited differentiation.
-  
-4. A regional and year-specific analysis reveals significant variation in best- and worst-performing categories, sub-categories, and products compared to the overall dataset. This highlights the importance of localized and time-based analysis, as global averages can mask regional demand patterns and lead to sub-optimal business decisions.
+---
 
-   
-### Consumer Insights: ###
+## 📊 Dashboard & Key Insights
 
-![Overall Consumer Insights](/Images/Consumer%20Insights_Overall.jpg)
+### 🇬🇧
 
-This is the overall consumer insights dashboard. It demonstrates which consumer segment, region, and states contributing most to our revenue. It also reveals product preferences by segment and geography. Key Insights are described below: 
+The final solution combines the main analytical perspectives into **one executive dashboard** instead of separate Product, Customer, and Regional dashboards.
 
-1. The dataset consists of three customer segments: Consumer, Corporate, and Home Office. Among them, the Consumer segment contributes the highest share of total revenue, followed by Corporate     and Home Office.
+The dashboard provides:
 
-   In terms of product preferences, the Consumer segment primarily purchases Furniture, followed by Technology and Office Supplies. In contrast, both Corporate and Home Office customers show a     stronger preference for Technology products, with Office Supplies and Furniture ranking second and third, respectively. This indicates distinct purchasing behaviors across customer segments,    emphasizing the importance of segment-specific product strategies.
+**📈 Sales & Profitability**
 
-2. From a geographic perspective, the West region is the highest revenue-contributing region, followed by East, Central, and South.
+* Strong overall sales growth across the analyzed period
+* Increasing profit over time
+* Q4 consistently represents the strongest sales quarter
+* Profitability can be monitored through Profit Margin and year-over-year comparisons
 
-   At the state level, California leads sales in the West, followed by Washington and Arizona. In the East, New York is the top-performing state, followed by Pennsylvania and Ohio. Texas           dominates the Central region, with Illinois and Michigan as the next highest contributors, while North Carolina leads in the South, followed by Georgia and Virginia.
+**🛍️ Product Performance**
 
-   Across all regions, each product category generates a reasonable share of revenue, although their relative performance varies slightly by region. This highlights the importance of regional-     level analysis rather than relying solely on global performance trends.
+* Technology is the strongest revenue-generating category
+* Sub-category performance varies considerably
+* The dashboard allows products and categories to be compared dynamically by year and region
 
-3. Analysis of shipping preferences shows that Standard Class is the most commonly used shipping mode, accounting for approximately 60% of all shipments. This is followed by Second Class (around 20%), First Class (around 15%), and Same Day Delivery (approximately 5%).
+**👥 Customer Segments**
 
-   The dominance of Standard Class suggests that most customers prioritize cost efficiency over delivery speed, while faster shipping options are used selectively for time-sensitive orders. 
+* Consumer represents the largest customer segment
+* Corporate and Home Office customers show different product preferences
+* Segment performance can be analyzed together with product and geographic dimensions
 
+**🌍 Regional Performance**
 
-## Dashboard Overview: One Level Details / Deeper Insights ##
+* Regional sales performance differs significantly across the business
+* State-level analysis highlights important markets within each region
+* Regional performance can be investigated further through the dedicated Regional Deep Dive page
 
-Each Dashboard can also be drill-down by a specific year or region to see a particular year or geographic details. Results vary significantly compared to the overall dataset, allowing deeper exploration of temporal and regional analysis. 
+The interactive design allows users to move from a **high-level executive view to more detailed analysis** without requiring separate dashboards for every business area.
 
-To see the full details, we recommend to download the complete Dashboard (Power BI file). 
+### 🇩🇪
 
-## Conclusion ##
+Die finale Lösung kombiniert die wichtigsten Analyseperspektiven in **einem zentralen Executive Dashboard**, anstatt separate Dashboards für Produkte, Kunden und Regionen zu verwenden.
 
-The Superstore Sales Data Analytics project demonstrates how raw sales data can be transformed into actionable business insights using Power BI. Through structured data preparation, modeling, DAX calculations, and interactive visualization, the dashboard provides a 360° view of sales, products, and consumer behavior.
+Das Dashboard bietet:
 
-**Key Insights Delivered:**
+**📈 Umsatz & Profitabilität**
 
-- 📈 Identified overall and year-specific sales & profit growth trends.
+* Deutliches Umsatzwachstum über den betrachteten Zeitraum
+* Steigender Profit über die Zeit
+* Q4 ist durchgehend das umsatzstärkste Quartal
+* Profitabilität kann über Profit Margin und Year-over-Year-Vergleiche überwacht werden
 
-- 🛍️ Highlighted best- and worst-performing products, product categories, and sub-categories across regions and time-frames.
+**🛍️ Produktperformance**
 
-- 👥 Analyzed customer segments and geographic markets contributing most to revenue.
+* Technology ist die umsatzstärkste Kategorie
+* Die Performance der Sub-Kategorien unterscheidet sich deutlich
+* Produkte und Kategorien können dynamisch nach Jahr und Region analysiert werden
 
-- 🎛️ Delivered an interactive, user-friendly dashboard that supports data-driven decision-making for business development and sales strategy.
+**👥 Kundensegmente**
 
-**Key Takeaways from this project**
+* Consumer stellt das größte Kundensegment dar
+* Corporate und Home Office zeigen unterschiedliche Produktpräferenzen
+* Segmente können gemeinsam mit Produkt- und Geografiedimensionen analysiert werden
 
-- I understood the importance of proper data modeling (Star Schema) to ensure accurate and efficient analysis.
+**🌍 Regionale Performance**
 
-- I practiced writing DAX measures for KPIs such as profit margin, sales growth, and customer segmentation, which deepened my understanding of DAX functions.
+* Die Regionen unterscheiden sich deutlich hinsichtlich ihrer Umsatzperformance
+* Die Analyse auf Bundesstaatsebene zeigt wichtige Märkte innerhalb der Regionen
+* Über die separate Regional-Deep-Dive-Seite können Regionen detaillierter untersucht werden
 
-- I learned how much value interactive features (slicers, drill-downs, tooltips, navigation) bring to a dashboard, making it easier for users to explore insights on their own.
+Das interaktive Design ermöglicht den Wechsel von einer **Management-Übersicht zu detaillierteren Analysen**, ohne für jeden Geschäftsbereich ein separates Dashboard zu benötigen.
 
-- Most importantly, I realized that data visualization is not just about charts—it’s about telling a story that supports business planning.
+---
 
-Overall, this project improved both my technical Power BI skills and my ability to think from a business perspective. It reflects my ability to design, build, and deliver BI solutions that not only visualize data but also provide meaningful insights for strategic planning.
+## 🔎 Regional Deep Dive
+
+### 🇬🇧
+
+A dedicated **Regional Deep Dive** page provides more detailed geographic analysis after selecting a region from the main dashboard.
+
+This drill-through functionality allows users to move from regional performance at the executive level to **state/city-level detail**, while maintaining the selected analytical context.
+
+### 🇩🇪
+
+Eine separate **Regional-Deep-Dive-Seite** ermöglicht eine detailliertere geografische Analyse nach Auswahl einer Region im Hauptdashboard.
+
+Die Drill-through-Funktion ermöglicht den Wechsel von der regionalen Managementübersicht zu **Details auf Bundesstaat-/Stadtebene**, während der ausgewählte Analysekontext beibehalten wird.
+
+---
+
+## 🎛️ Interactivity & User Experience
+
+### 🇬🇧
+
+The dashboard was designed to be interactive and easy to explore.
+
+Key features include:
+
+* Year, Region, Category, and Segment slicers
+* Drill-down and drill-through analysis
+* Interactive visual filtering
+* Navigation between dashboard pages
+* Reset Filters functionality
+* Consistent dark-theme executive design
+
+### 🇩🇪
+
+Das Dashboard wurde interaktiv und benutzerfreundlich gestaltet.
+
+Wichtige Funktionen sind:
+
+* Slicer für Jahr, Region, Kategorie und Segment
+* Drill-down und Drill-through
+* Interaktive Filterung der Visualisierungen
+* Navigation zwischen den Dashboard-Seiten
+* Reset-Filter-Funktion
+* Einheitliches Executive Design im Dark Theme
+
+---
+
+## 🎯 Conclusion
+
+### 🇬🇧
+
+This project demonstrates how raw transactional data can be transformed into a structured and interactive **Business Intelligence solution using Power BI**.
+
+The project combines technical Power BI skills with business-oriented analysis by connecting **data preparation, Star Schema modeling, DAX, time intelligence, visualization, and interactive dashboard design**.
+
+The main outcome is a centralized dashboard that helps decision-makers understand **what is happening, where performance differs, and where deeper analysis may be required**.
+
+### 🇩🇪
+
+Dieses Projekt zeigt, wie rohe Transaktionsdaten mit **Power BI** in eine strukturierte und interaktive **Business-Intelligence-Lösung** überführt werden können.
+
+Das Projekt verbindet technische Power-BI-Kenntnisse mit einer geschäftsorientierten Analyse und kombiniert **Datenaufbereitung, Star-Schema-Modellierung, DAX, Time Intelligence, Visualisierung und interaktives Dashboard-Design**.
+
+Das zentrale Ergebnis ist ein Dashboard, das Entscheidungsträger dabei unterstützt zu verstehen, **was passiert, wo sich die Performance unterscheidet und in welchen Bereichen eine detailliertere Analyse erforderlich ist**.
+
+---
+
+## 🛠️ Tools & Technologies
+
+**Power BI · Power Query · DAX · Data Modeling · Star Schema · Time Intelligence · Data Visualization**
+
+---
+
+## 📁 Project Structure
+
+```text
+Superstore-PowerBI-Project/
+│
+├── README.md
+├── PowerBI/
+│   └── Superstore_Sales_Performance.pbix
+│
+├── Dataset/
+│   └── Superstore_Data.xlsx
+│
+└── Images/
+    ├── Executive_Overview.png
+    ├── Regional_Deep_Dive.png
+    └── Data_Model.jpg
+```
+
+---
+
+## 👤 Author
+
+**I. Hossain**
+
+Power BI · Data Analytics · Business Intelligence
