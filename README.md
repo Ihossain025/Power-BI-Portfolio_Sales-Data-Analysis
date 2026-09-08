@@ -1,43 +1,41 @@
 # 📊 Superstore Sales Performance Dashboard | Power BI
 
-Business Intelligence • Data Analytics • Power BI • DAX • Data Modeling
+**Business Intelligence • Data Analytics • Power BI • DAX • Data Modeling**
 
-English | Deutsch
+**English | Deutsch**
 
-An interactive Power BI dashboard for analyzing sales performance, profitability, product categories, customer segments, and regional performance using the Superstore dataset.
+An interactive Power BI dashboard for analyzing sales performance, profitability, product category performance, and regional performance using the Superstore sales dataset.
 
 ---
 
 ## 🇬🇧 Introduction & Project Overview
 
-This Power BI project was developed from the perspective of a **Sales Manager / Sales Department Head** who needs a clear overview of business performance and the ability to investigate specific areas when required.
+This Power BI project was developed from the perspective of a **Sales Executive** who needs a clear overview of business performance and the ability to investigate specific areas when required.
 
-The project transforms raw transactional sales data into an interactive dashboard that combines **sales, profitability, product, customer segment, and geographic analysis** in one centralized view.
+The project transforms raw transactional sales data into an interactive dashboard that combines **sales, profitability, product, and geographic analysis** in one centralized view.
 
 The dashboard helps management to:
 
 * 📈 Monitor sales and profit development over time
 * 🛍️ Compare product categories and sub-categories
-* 👥 Understand customer segment performance
-* 🌍 Evaluate regional and state-level performance
-* 📊 Compare current performance with previous years
+* 🌍 Evaluate regional and city-state-level performance
+* 📊 Compare current performance with previous period (Year, Quarter, Month)
 * 🔎 Drill into regional details when deeper analysis is required
 
 The goal is not only to visualize data, but to provide a practical BI solution that supports **data-driven sales and business decisions**.
 
 ### 🇩🇪 Einführung & Projektüberblick
 
-Dieses Power-BI-Projekt wurde aus der Perspektive eines **Sales Managers / Vertriebsleiters** entwickelt, der einen klaren Überblick über die Geschäftsentwicklung benötigt und bei Bedarf einzelne Bereiche detaillierter analysieren möchte.
+Dieses Power-BI-Projekt wurde aus der Perspektive eines **Vertriebsleiters** entwickelt, der einen klaren Überblick über die Geschäftsentwicklung benötigt und bei Bedarf einzelne Bereiche detaillierter analysieren möchte.
 
-Das Projekt transformiert rohe Transaktionsdaten in ein interaktives Dashboard, das **Umsatz, Profitabilität, Produkte, Kundensegmente und regionale Performance** in einer zentralen Übersicht kombiniert.
+Das Projekt transformiert rohe Transaktionsdaten in ein interaktives Dashboard, das **Umsatz, Profitabilität, Produkte und regionale Performance** in einer zentralen Übersicht kombiniert.
 
 Das Dashboard unterstützt das Management dabei:
 
 * 📈 Umsatz- und Gewinnentwicklung über die Zeit zu überwachen
-* 🛍️ Produktkategorien und Sub-Kategorien zu vergleichen
-* 👥 die Performance verschiedener Kundensegmente zu verstehen
-* 🌍 Regionen und Bundesstaaten zu analysieren
-* 📊 die aktuelle Performance mit Vorjahren zu vergleichen
+* 🛍️ Produktkategorien und Subkategorien zu vergleichen
+* 🌍 Regionen, Bundesstaaten und Städten zu analysieren
+* 📊 die aktuelle Performance mit Zeitraum zu vergleichen
 * 🔎 bei Bedarf regionale Details per Drill-through zu untersuchen
 
 Das Ziel ist nicht nur die Visualisierung von Daten, sondern die Entwicklung einer praxisnahen BI-Lösung zur **datenbasierten Unterstützung von Vertriebs- und Geschäftsentscheidungen**.
@@ -68,15 +66,15 @@ This project demonstrates an end-to-end Power BI workflow covering **data prepar
 **📐 Data Analysis – DAX**
 
 * Created measures for Sales, Profit, Profit Margin, Orders, and growth analysis
-* Implemented Year-over-Year calculations and time intelligence
-* Used functions such as `CALCULATE`, `SUMX`, `DIVIDE`, and `DISTINCTCOUNT`
+* Implemented Year-over-Year calculations using time intelligence functions like 'SamePeriodLastYear'
+* Used functions such as 'CALCULATE', 'SUM', 'DIVIDE', 'DISTINCTCOUNT', 'COUNTA', 'MAX', 'MIN ', ', etc.
 
 **📊 Data Visualization & UX**
 
 * Designed KPI cards, trend charts, bar/column charts, and comparison visuals
 * Added slicers for interactive filtering
 * Implemented drill-down and drill-through analysis
-* Added navigation and reset-filter functionality
+* Added page navigation and reset-filter functionality through bookmark
 * Designed the dashboard with an executive-focused layout
 
 ### 🇩🇪
@@ -102,14 +100,14 @@ Dieses Projekt zeigt einen vollständigen Power-BI-Workflow von der **Datenaufbe
 
 * Measures für Umsatz, Profit, Profit Margin, Orders und Wachstum entwickelt
 * Year-over-Year-Berechnungen und Time Intelligence umgesetzt
-* Funktionen wie `CALCULATE`, `SUMX`, `DIVIDE` und `DISTINCTCOUNT` verwendet
+* Funktionen wie `CALCULATE`, `SUM`, `DIVIDE`, `DISTINCTCOUNT`, 'COUNTA', 'MAX', 'MIN ' verwendet
 
 **📊 Visualisierung & UX**
 
 * KPI-Karten, Trenddiagramme, Balken-/Säulendiagramme und Vergleichsvisualisierungen erstellt
 * Interaktive Slicer integriert
 * Drill-down und Drill-through umgesetzt
-* Navigation und Reset-Filter-Funktion integriert
+* Seiten-Navigation und Reset-Filter-Funktion unter Verwendung  Bookmark integriert
 * Dashboard mit Fokus auf eine übersichtliche Management-Perspektive gestaltet
 
 ---
@@ -161,21 +159,14 @@ The dashboard provides:
 **📈 Sales & Profitability**
 
 * Strong overall sales growth across the analyzed period
-* Increasing profit over time
+* Increasing profit over time, but profit margin growth is very low compared to profit
 * Q4 consistently represents the strongest sales quarter
-* Profitability can be monitored through Profit Margin and year-over-year comparisons
 
 **🛍️ Product Performance**
 
 * Technology is the strongest revenue-generating category
 * Sub-category performance varies considerably
 * The dashboard allows products and categories to be compared dynamically by year and region
-
-**👥 Customer Segments**
-
-* Consumer represents the largest customer segment
-* Corporate and Home Office customers show different product preferences
-* Segment performance can be analyzed together with product and geographic dimensions
 
 **🌍 Regional Performance**
 
@@ -194,21 +185,15 @@ Das Dashboard bietet:
 **📈 Umsatz & Profitabilität**
 
 * Deutliches Umsatzwachstum über den betrachteten Zeitraum
-* Steigender Profit über die Zeit
+* Der Gewinn steigt im Laufe der Zeit an, doch das Wachstum der Gewinnmarge ist im Vergleich zum Gewinn sehr gering
 * Q4 ist durchgehend das umsatzstärkste Quartal
 * Profitabilität kann über Profit Margin und Year-over-Year-Vergleiche überwacht werden
 
 **🛍️ Produktperformance**
 
 * Technology ist die umsatzstärkste Kategorie
-* Die Performance der Sub-Kategorien unterscheidet sich deutlich
+* Die Performance der Subkategorien unterscheidet sich deutlich
 * Produkte und Kategorien können dynamisch nach Jahr und Region analysiert werden
-
-**👥 Kundensegmente**
-
-* Consumer stellt das größte Kundensegment dar
-* Corporate und Home Office zeigen unterschiedliche Produktpräferenzen
-* Segmente können gemeinsam mit Produkt- und Geografiedimensionen analysiert werden
 
 **🌍 Regionale Performance**
 
@@ -294,8 +279,8 @@ Das zentrale Ergebnis ist ein Dashboard, das Entscheidungsträger dabei unterst�
 
 ## 📁 Project Structure
 
-```text
-Superstore-PowerBI-Project/
+
+SuperstoreSales-PowerBI-Project/
 │
 ├── README.md
 ├── PowerBI/
@@ -314,6 +299,6 @@ Superstore-PowerBI-Project/
 
 ## 👤 Author
 
-**I. Hossain**
+**Md Iqbal Hossain**
 
 Power BI · Data Analytics · Business Intelligence
