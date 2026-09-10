@@ -209,7 +209,7 @@ Das interaktive Design ermöglicht den Wechsel von einer **Management-Übersicht
 
 ## 🔎 Regional Deep Dive
 
-![Executive Sales Dashboard](Images/Regional_Performance_Deep Dive.png)
+![Regional Performance Deep Dive](Images/Regional_Performance_Deep_Dive.png)
 
 ### 🇬🇧
 
