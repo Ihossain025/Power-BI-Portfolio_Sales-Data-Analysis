@@ -287,16 +287,18 @@ Das zentrale Ergebnis ist ein Dashboard, das Entscheidungsträger dabei unterst�
 SuperstoreSales-PowerBI-Project/
 │
 ├── README.md
-├── PowerBI/
+├── Main Power BI File/
 │   └── Superstore_Sales_Analysis.pbix
 │
 ├── Dataset/
-│   └── Superstore_Data.xlsx
+│   └── Superstore.csv
 │
 └── Images/
     ├── Executive_Overview.png
-    ├── Regional_Deep_Dive.png
+    ├── Regional_Performance_Deep_Dive.png
     └── Data_Model.jpg
+    └── Transformation_with_PowerQuery.jpg
+    └── Data_Validation.jpg
 ```
 
 ---
