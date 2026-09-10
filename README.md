@@ -8,8 +8,6 @@ An interactive Power BI dashboard for analyzing sales performance, profitability
 
 ---
 
-![Executive Sales Dashboard](Images/Executive_Overview.png)
-
 ## 🇬🇧 Introduction & Project Overview
 
 This Power BI project was developed from the perspective of a **Sales Executive** who needs a clear overview of business performance and the ability to investigate specific areas when required.
@@ -41,6 +39,8 @@ Das Dashboard unterstützt das Management dabei:
 * 🔎 bei Bedarf regionale Details per Drill-through zu untersuchen
 
 Das Ziel ist nicht nur die Visualisierung von Daten, sondern die Entwicklung einer praxisnahen BI-Lösung zur **datenbasierten Unterstützung von Vertriebs- und Geschäftsentscheidungen**.
+
+![Executive Sales Dashboard](Images/Executive_Overview.png)
 
 ---
 
@@ -115,7 +115,7 @@ Dieses Projekt zeigt einen vollständigen Power-BI-Workflow von der **Datenaufbe
 ---
 
 ## 🧩 Data & Data Model
-
+![Executive Sales Dashboard](Images/Data_Model.png)
 ### 🇬🇧
 
 The project is based on the **Superstore sales dataset**, originally provided as a flat transactional table.
