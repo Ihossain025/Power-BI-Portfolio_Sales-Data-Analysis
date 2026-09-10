@@ -6,6 +6,8 @@
 
 An interactive Power BI dashboard for analyzing sales performance, profitability, product category performance, and regional performance using the Superstore sales dataset.
 
+![Executive Sales Dashboard](Images/Executive_Overview.png)
+
 ---
 
 ## 🇬🇧 Introduction & Project Overview
