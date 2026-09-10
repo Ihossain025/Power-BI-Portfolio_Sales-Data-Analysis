@@ -133,8 +133,6 @@ The data was transformed into a structured **Star Schema** consisting of:
 
 The dimensional model allows consistent filtering and supports reliable time-series and business analysis.
 
-![Data Model](Images/Data_Model.jpg)
-
 ### 🇩🇪
 
 Das Projekt basiert auf dem **Superstore Sales Dataset**, das ursprünglich als flache Transaktionstabelle vorlag.
