@@ -8,6 +8,8 @@ An interactive Power BI dashboard for analyzing sales performance, profitability
 
 ---
 
+![Executive Sales Dashboard](Images/Executive_Overview.png)
+
 ## 🇬🇧 Introduction & Project Overview
 
 This Power BI project was developed from the perspective of a **Sales Executive** who needs a clear overview of business performance and the ability to investigate specific areas when required.
@@ -39,8 +41,6 @@ Das Dashboard unterstützt das Management dabei:
 * 🔎 bei Bedarf regionale Details per Drill-through zu untersuchen
 
 Das Ziel ist nicht nur die Visualisierung von Daten, sondern die Entwicklung einer praxisnahen BI-Lösung zur **datenbasierten Unterstützung von Vertriebs- und Geschäftsentscheidungen**.
-
-![Executive Sales Dashboard](Images/Executive_Overview.png)
 
 ---
 
@@ -115,7 +115,9 @@ Dieses Projekt zeigt einen vollständigen Power-BI-Workflow von der **Datenaufbe
 ---
 
 ## 🧩 Data & Data Model
+
 ![Executive Sales Dashboard](Images/Data_Model.png)
+
 ### 🇬🇧
 
 The project is based on the **Superstore sales dataset**, originally provided as a flat transactional table.
@@ -209,6 +211,8 @@ Das interaktive Design ermöglicht den Wechsel von einer **Management-Übersicht
 
 ## 🔎 Regional Deep Dive
 
+![Executive Sales Dashboard](Images/Regional_Performance_Deep Dive.png)
+
 ### 🇬🇧
 
 A dedicated **Regional Deep Dive** page provides more detailed geographic analysis after selecting a region from the main dashboard.
@@ -286,7 +290,7 @@ SuperstoreSales-PowerBI-Project/
 │
 ├── README.md
 ├── PowerBI/
-│   └── Superstore_Sales_Performance.pbix
+│   └── Superstore_Sales_Analysis.pbix
 │
 ├── Dataset/
 │   └── Superstore_Data.xlsx
